@@ -7,11 +7,9 @@ author_profile: true
 <i>This list of publications was obtained from Scopus May 2020.</i>
 <br>
 
-{{ site.data.scopus[0].AU | jsonify }}
-
 {% for item in site.data.scopus %}
     <br>
-    {{ item. }} ({{ item.Year }}) <b>{{ item.Title }}</b>. <i>{{item.Sourcetitle}}</i> 
+    {{ item.AU.length }} ({{ item.Year }}) <b>{{ item.Title }}</b>. <i>{{item.Sourcetitle}}</i> 
     {% if item.Volume !="" %} {{ item.Volume}} {% endif %}
     {% if item.Issue != nil %}  ({{item.Issue}}) {% endif %} 
     {% if item.Pagestart !="" %} , pp. {{ item.Pagestart }}-{{ item.Pageend}}{% endif %}. 
