@@ -11,7 +11,8 @@ My list of publications obtained from Scopus May 2020.
 <ul>
 {% for item in site.data.scopus %}
   <li>
-      PUB: {{ item.Authors }}, ({{ item.Year }}) {{ item.Title }}
+    {{ item.Authors }}, ({{ item.Year }}) <b>{{ item.Title }}</b>. {{item.Sourcetitle}} {{item.Volume}}({{item.Issue}}) 
+    <a href={{item.DOI}}>{{item.DOI}}</a>
   </li>
 {% endfor %}
 </ul>
