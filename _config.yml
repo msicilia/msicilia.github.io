@@ -1,3 +1,7 @@
-theme: jekyll-theme-minimal
-title: Miguel-Angel Sicilia personal home page
-description: Miguel-Angel Sicilia
+remote_theme: "mmistakes/minimal-mistakes@4.19.2" 
+title: Miguel-Angel Sicilia
+
+
+# Plugins (previously gems:)
+plugins:
+  - jekyll-include-cache
