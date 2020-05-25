@@ -9,9 +9,10 @@ author_profile: true
 This is my list of publications obtained from Scopus May 2020.  
 
 <ul>
+  <li>A publication.</li>
 {% for member in site.scopus.members %}
   <li>
-      PUB: {{ member.Authors}}, ({{member.Year}}) {{member.Title}}
+      PUB: {{ member.Authors }}, ({{ member.Year }}) {{ member.Title }}
   </li>
 {% endfor %}
 </ul>
