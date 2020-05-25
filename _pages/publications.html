@@ -7,7 +7,7 @@ author_profile: true
 <i>This list of publications was obtained from Scopus May 2020.</i>
 <br>
 
-{{ site.data.scopus[0] }}
+{{ site.data.scopus[0].AU | jsonify }}
 
 {% for item in site.data.scopus %}
     <br>
