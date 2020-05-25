@@ -9,7 +9,7 @@ author_profile: true
 
 {% for item in site.data.scopus %}
     <br>
-    {{ item.AU.length }} ({{ item.Year }}) <b>{{ item.Title }}</b>. <i>{{item.Sourcetitle}}</i> 
+    {% raw %}{{ item.AU.length }}{% endraw %} ({{ item.Year }}) <b>{{ item.Title }}</b>. <i>{{item.Sourcetitle}}</i> 
     {% if item.Volume !="" %} {{ item.Volume}} {% endif %}
     {% if item.Issue != nil %}  ({{item.Issue}}) {% endif %} 
     {% if item.Pagestart !="" %} , pp. {{ item.Pagestart }}-{{ item.Pageend}}{% endif %}. 
