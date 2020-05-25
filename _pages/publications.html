@@ -7,12 +7,14 @@ author_profile: true
 <i>This list of publications was obtained from Scopus May 2020.</i>
 <br>
 
+<ul>
 {% for item in site.data.scopus %}
-    <br>
-    {% raw %}{{ item.AU.length }}{% endraw %} ({{ item.Year }}) <b>{{ item.Title }}</b>. <i>{{item.Sourcetitle}}</i> 
+    <li>
+    {{ item.first[1] }} ({{ item.Year }}) <b>{{ item.Title }}</b>. <i>{{item.Sourcetitle}}</i> 
     {% if item.Volume !="" %} {{ item.Volume}} {% endif %}
     {% if item.Issue != nil %}  ({{item.Issue}}) {% endif %} 
     {% if item.Pagestart !="" %} , pp. {{ item.Pagestart }}-{{ item.Pageend}}{% endif %}. 
     <a href="https://doi.org/{{item.DOI}}"">{{item.DOI}}</a>
-    <br>
+    </li>
 {% endfor %}
+</ul>
