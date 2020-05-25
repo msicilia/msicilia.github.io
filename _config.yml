@@ -11,8 +11,8 @@ include:
 
 author:
   name     : "Miguel-Angel Sicilia"
-  avatar   : "/assets/images/_robocop-512.png"
-  bio      : "My awesome biography constrained to a sentence or two goes here."
+  avatar   : "/assets/images/gunter.jpg"
+  bio      : "Computer Scientist"
   location : "Madrid, Spain"
   github   : "msicilia"
   linkedin:  "msicilia" 
