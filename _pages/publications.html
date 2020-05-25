@@ -10,10 +10,10 @@ My list of publications obtained from Scopus May 2020.
 {% for item in site.data.scopus %}
     {{ item }}
     <br>
-    {{ item.Authors }} ({{ item.Year }}) <b>{{ item.Title }}</b>. <i>{{item.Sourcetitle}}</i> 
-    {% if item.Volume !="" %} {{ item.Volume}} {% endif %}. 
-    {% if item.Issue !="" %}  ({{item.Issue}}) {% endif %}. 
-    {% if item.Pagestart !="" %} pp. {{ item.Pagestart }}-{{ item.Pageend}}{% endif %}. 
+    {{ item.Year }} ({{ item.Year }}) <b>{{ item.Title }}</b>. <i>{{item.Sourcetitle}}</i> 
+    {% if item.Volume !="" %} {{ item.Volume}} {% endif %}
+    {% if item.Issue != nil %}  ({{item.Issue}}) {% endif %} 
+    {% if item.Pagestart !="" %} , pp. {{ item.Pagestart }}-{{ item.Pageend}}{% endif %}. 
     <a href="https://doi.org/{{item.DOI}}"">{{item.DOI}}</a>
     <br>
 {% endfor %}
