@@ -1,8 +1,23 @@
 remote_theme: "mmistakes/minimal-mistakes@4.19.2" 
 title: Miguel-Angel Sicilia
+subtitle: homepage
 github_username: msicilia
+minimal_mistakes_skin:   "air" # "default" "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum" "sunrise"
 
-include: ["_pages"]
+include:
+  - _pages
+
+
+author:
+  name     : "Miguel-Angel Sicilia"
+  avatar   : "/assets/images/_robocop-512.png"
+  bio      : "My awesome biography constrained to a sentence or two goes here."
+  location : "Madrid, Spain"
+  links:
+   - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/msicilia"
+
 
 defaults:
   # _posts
