@@ -4,13 +4,14 @@ title: "Publications"
 permalink: /publications/
 author_profile: true
 ---
-My list of publications obtained from Scopus May 2020.  
+<i>This list of publications was obtained from Scopus May 2020.</i>
+<br>
 
+{{ site.data.scopus[0] }}
 
 {% for item in site.data.scopus %}
-    {{ item[0] }}
     <br>
-    {{ item["Autores"] }} ({{ item.Year }}) <b>{{ item.Title }}</b>. <i>{{item.Sourcetitle}}</i> 
+    {{ item. }} ({{ item.Year }}) <b>{{ item.Title }}</b>. <i>{{item.Sourcetitle}}</i> 
     {% if item.Volume !="" %} {{ item.Volume}} {% endif %}
     {% if item.Issue != nil %}  ({{item.Issue}}) {% endif %} 
     {% if item.Pagestart !="" %} , pp. {{ item.Pagestart }}-{{ item.Pageend}}{% endif %}. 
